@@ -1,10 +1,9 @@
-
-
 let contenidoCard = document.querySelector('.container')
 $(document).ready(function() {
-    fetch('https://api-proyecto-bsale.herokuapp.com/')
+    fetch('https://api-proyecto-bsale.herokuapp.com')
     .then(res => res.json())
     .then(data => {
+        // console.log(data)
         section(data)
 
     })
